@@ -2,7 +2,7 @@
 #set ($description="Readme")
 #set ($author="Evol Johnson")
 #set ($overwrite="true")
-#set ($enabled="false")
+#set ($enabled="true")
 #set ($header="false")
 
 #set ($filep="README.md")
