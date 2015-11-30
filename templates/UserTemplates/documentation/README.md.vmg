@@ -17,6 +17,6 @@ ${h}${h} Entity information
 
  ${h}${h}${h} ${entity.name}
 #foreach(${attribute} in $entity.attributes)
-    ${attribute.name}
+    ${attribute.name} (${attribute.type})
 #end
 #end
