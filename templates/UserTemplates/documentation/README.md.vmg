@@ -1,0 +1,22 @@
+#set ($language="MarkDown")
+#set ($description="Readme")
+#set ($author="Evol Johnson")
+#set ($overwrite="true")
+#set ($enabled="false")
+#set ($header="false")
+
+#set ($filep="README.md")
+#set ($filename="${outputDir}/${filep}")
+#parse("common/utils.parse")
+
+${h} ${project.name}
+
+${h} Generating documentation sample
+${h}${h} Entity information
+#foreach(${entity} in $entities)
+
+ ${h}${h}${h} ${entity.name}
+#foreach(${attribute} in $entity.attributes)
+    ${attribute.name}
+#end
+#end
